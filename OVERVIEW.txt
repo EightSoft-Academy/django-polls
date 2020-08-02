@@ -1,0 +1,13 @@
+  Django at a glance
+1. Design your model
+2. Install it:
+  $ python manage.py makemigrations
+  $ python manage.py migrate
+3. Enjoy the free API to access your data: 'MyModel.object.all()'
+4. Configure a dynamic admin interface
+5. Design your URLs (urls go to your views)
+6. Write your views (views go to your models and render a template)
+7. Design your templates (templates depends on your views)
+8. This is just the surface. Enjoy with Django.
+
+References: https://docs.djangoproject.com/en/3.0/intro/overview/
