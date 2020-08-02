@@ -11,3 +11,16 @@ TIPS:
 5. Include the app in your project from 'INSTALLED_APPS' list
 6. $ python manage.py makemigrations polls
 6. $ python manage.py sqlmigrate polls 0001
+7. Change your models (in models.py):
+ - Run '$ python manage.py makemigrations' to create migrations for those changes
+ - Run '$ python manage.py migrate' to apply those changes to the database
+8. Playing with the API (models=data): '$ python manage.py shell'
+ - https://docs.djangoproject.com/en/3.0/intro/tutorial02/#playing-with-the-api
+9. Django Admin
+9. Creating an admin user: '$ python manage.py createsuperuser'
+
+References:
+1. About q.choice_set.all(): https://docs.djangoproject.com/en/3.0/ref/models/relations/
+2. About __startswith, __endswith ... https://docs.djangoproject.com/en/3.0/topics/db/queries/#field-lookups-intro
+3. Database API: https://docs.djangoproject.com/en/3.0/topics/db/queries/
+4. INTERNATIONALIZATION: https://docs.djangoproject.com/en/3.0/topics/i18n/translation/
