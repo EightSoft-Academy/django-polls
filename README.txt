@@ -22,11 +22,22 @@ TIPS:
 9. Django Admin
 9. Creating an admin user: '$ python manage.py createsuperuser'
 
-    PART 3 - Creating "views"
+    PART 3 - Creating "views", "urls", and using "templates"
+10. https://docs.djangoproject.com/en/3.0/intro/tutorial03/
+11. Write views which really do something, do not apply any design to them, write urls which must be changed only from 'urls.py' - {% url 'polls:detail' question.id %}
+12. write app_name in each 'urls.py'
 
+    PART 4 - forms - generic views
+13. https://docs.djangoproject.com/en/3.0/intro/tutorial04/
+14. <form action="{% url 'polls:vote' question.id %}" method="post">
+ - Here action is going from "detail.html" to the 'polls/urls.py' "vote.html"
+15. Whenever you create a form that alters data server-side, use method="post"
+16. All POST forms that are targeted at internal URLs should use the {% csrf_token %} template tag.
+17. Race conditions (Avoiding race conditions using F())
 
 References:
 1. About q.choice_set.all(): https://docs.djangoproject.com/en/3.0/ref/models/relations/
 2. About __startswith, __endswith ... https://docs.djangoproject.com/en/3.0/topics/db/queries/#field-lookups-intro
 3. Database API: https://docs.djangoproject.com/en/3.0/topics/db/queries/
 4. INTERNATIONALIZATION: https://docs.djangoproject.com/en/3.0/topics/i18n/translation/
+5. FORMS https://docs.djangoproject.com/en/3.0/topics/forms/
