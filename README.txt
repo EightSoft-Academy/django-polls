@@ -59,3 +59,9 @@ TIPS:
 5. FORMS https://docs.djangoproject.com/en/3.0/topics/forms/
 6. CLASS BASED VIEWS: https://docs.djangoproject.com/en/3.0/topics/class-based-views/
 7. STATIC: https://docs.djangoproject.com/en/3.0/howto/static-files/
+
+
+    MAIN LINKS:
+1. Intro to Django: https://docs.djangoproject.com/en/3.0/intro/overview/
+2. Reusable apps: https://docs.djangoproject.com/en/3.0/intro/reusable-apps/
+3. What's next: https://docs.djangoproject.com/en/3.0/intro/whatsnext/
