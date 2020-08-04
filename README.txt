@@ -48,6 +48,8 @@ TIPS:
 21. {% load static %}
  <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 
+    PART 7 - customizing the admin site
+22. https://docs.djangoproject.com/en/3.0/intro/tutorial07/
 
     REFERENCES:
 1. About q.choice_set.all(): https://docs.djangoproject.com/en/3.0/ref/models/relations/
