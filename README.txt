@@ -27,17 +27,28 @@ TIPS:
 11. Write views which really do something, do not apply any design to them, write urls which must be changed only from 'urls.py' - {% url 'polls:detail' question.id %}
 12. write app_name in each 'urls.py'
 
-    PART 4 - forms - generic views
+    PART 4 - forms - class based views (or generic views)
 13. https://docs.djangoproject.com/en/3.0/intro/tutorial04/
 14. <form action="{% url 'polls:vote' question.id %}" method="post">
  - Here action is going from "detail.html" to the 'polls/urls.py' "vote.html"
 15. Whenever you create a form that alters data server-side, use method="post"
 16. All POST forms that are targeted at internal URLs should use the {% csrf_token %} template tag.
 17. Race conditions (Avoiding race conditions using F())
+18. Class based views
+ - https://docs.djangoproject.com/en/3.0/intro/tutorial04/#use-generic-views-less-code-is-better
+ - change urls
+ - context_object_name
 
-References:
+    PART 5 - tests
+    https://docs.djangoproject.com/en/3.0/intro/tutorial05/
+19. $ python manage.py test polls
+
+
+
+    REFERENCES:
 1. About q.choice_set.all(): https://docs.djangoproject.com/en/3.0/ref/models/relations/
 2. About __startswith, __endswith ... https://docs.djangoproject.com/en/3.0/topics/db/queries/#field-lookups-intro
 3. Database API: https://docs.djangoproject.com/en/3.0/topics/db/queries/
 4. INTERNATIONALIZATION: https://docs.djangoproject.com/en/3.0/topics/i18n/translation/
 5. FORMS https://docs.djangoproject.com/en/3.0/topics/forms/
+6. CLASS BASED VIEWS: https://docs.djangoproject.com/en/3.0/topics/class-based-views/
