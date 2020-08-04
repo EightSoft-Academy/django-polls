@@ -1,0 +1,10 @@
+li a {
+    color: green;
+}
+
+body {
+    /* Center the image */
+    background-size: contain;
+    background: white url("images/251038.jpg") no-repeat;
+    background-size: 1380px 720px ;
+}

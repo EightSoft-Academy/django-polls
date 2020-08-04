@@ -43,6 +43,10 @@ TIPS:
     https://docs.djangoproject.com/en/3.0/intro/tutorial05/
 19. $ python manage.py test polls
 
+    PART 6 - static files (css, js, images)
+20.  STATICFILES_FINDERS -> AppDirectoriesFinder
+21. {% load static %}
+ <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 
 
     REFERENCES:
@@ -52,3 +56,4 @@ TIPS:
 4. INTERNATIONALIZATION: https://docs.djangoproject.com/en/3.0/topics/i18n/translation/
 5. FORMS https://docs.djangoproject.com/en/3.0/topics/forms/
 6. CLASS BASED VIEWS: https://docs.djangoproject.com/en/3.0/topics/class-based-views/
+7. STATIC: https://docs.djangoproject.com/en/3.0/howto/static-files/
